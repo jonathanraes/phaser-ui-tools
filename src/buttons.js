@@ -19,6 +19,13 @@ export class textSprite extends Phaser.Sprite {
 
         this.addChild(this.text);
     }
+
+    /**
+      * @param {string} text - The new text to place on top of the sprite.
+     */
+    setText(text) {
+        this.text.setText(text);
+    }
 }
 
 /** Phaser Button with text added as a child.
@@ -45,3 +52,4 @@ export class textButton extends Phaser.Button {
         this.addChild(this.text);
     }
 }
+
