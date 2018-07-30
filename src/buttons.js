@@ -14,7 +14,7 @@ export class textSprite extends Phaser.Sprite {
         super(game, x, y, image);
         game.add.existing(this);
 
-        this.text = this.game.add.text(0, 0, label, style);
+        this.text = this.game.add.text(this.width / 2, this.height / 2, label, style);
         this.text.anchor.set(0.5, 0.5);
 
         this.addChild(this.text);
@@ -39,7 +39,7 @@ export class textButton extends Phaser.Button {
         super(game, x, y, image, callback, callbackContext);
         game.add.existing(this);
 
-        this.text = this.game.add.text(0, 0, label, style);
+        this.text = this.game.add.text(this.width / 2, this.height / 2, label, style);
         this.text.anchor.set(0.5, 0.5);
 
         this.addChild(this.text);
